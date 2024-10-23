@@ -28,9 +28,9 @@ let finalArray = ""
 for(let i = 0;i < newArray.length; i++){
     let height = `${newArray[i] * 2.6}px`
    if (i % 2 === 0){
-    finalArray += `<p class="woman" style="height:${height}">${newArray[i]}</p>`
+    finalArray += `<p class="column woman" style="height:${height}">${newArray[i]}</p>`
    } else{
-    finalArray +=  `<p class="man" style="height:${height}">${newArray[i]}</p>`
+    finalArray +=  `<p class="column man" style="height:${height}">${newArray[i]}</p>`
    }
 }
 console.log(finalArray)

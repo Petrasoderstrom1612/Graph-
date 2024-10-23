@@ -1,7 +1,7 @@
 export const peopleWorkingAbroad = [
     {
-        women: [10, 15, 22, 8, 90],
-        men: [55, 6, 70, 30, 50],
+        women: [90, 15, 22, 8, 40],
+        men: [45, 6, 70, 30, 80],
         countries: ["UK", "USA", "NO", "DK", "FI"]
     }
 ]
