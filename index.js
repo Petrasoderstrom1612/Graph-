@@ -1,5 +1,6 @@
 import {peopleWorkingAbroad} from "./data.js"
 const peopleEl = document.getElementById("peopleEl")
+const mainBoxEl = document.getElementById("mainBoxEl")
 
 
 console.log(peopleWorkingAbroad)
@@ -33,3 +34,9 @@ for(let i = 0;i < newArray.length; i++){
 }
 console.log(finalArray)
 peopleEl.innerHTML = finalArray
+
+let leftSite = ""
+for (let i = 10; i< 101;i+=10){
+    leftSite += `<p class="left-number">${i}</p> `
+}
+mainBoxEl.innerHTML = leftSite

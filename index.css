@@ -62,4 +62,12 @@ body{
     height:17em;
     border-bottom: 1px solid white;
     border-left: 1px solid white;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.left-number{
+    margin:0;
+    margin-left:-2em;
 }
