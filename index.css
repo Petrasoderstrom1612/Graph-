@@ -1,9 +1,9 @@
 body{
     height: 100%;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .people{
@@ -12,27 +12,21 @@ body{
 }
 
 .woman{
-    /* display: flex;
-    justify-content: space-evenly; */
     color:red;
 }
 
 .man{
-    /* display: flex;
-    justify-content: space-evenly; */
     color:#009fff;
     margin-right: 1.3em;;
 }
 
 .whole-modal{
-    padding: 28px;
-    padding-bottom:38px;
     align-self: end;
 }
   
 .modal {
-    width:90%;
-    height: 66%;
+    height: 55%;
+    height: 55%;
     border-radius: 5px;
     box-shadow: 0px 0px 6px 2px #666;
     background-color: #212529;
@@ -70,4 +64,25 @@ body{
 .left-number{
     margin:0;
     margin-left:-2em;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .modal {
+        width:55%;
+        height: 35%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .modal {
+        width: 47%;
+        height: 90%;
+    }
+}    
+
+@media only screen and (min-width: 1024px) {
+    .modal {
+        width: 400px;
+        height: 400px;
+    }
 }
