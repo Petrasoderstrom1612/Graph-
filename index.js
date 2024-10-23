@@ -1,7 +1,7 @@
 import {peopleWorkingAbroad} from "./data.js"
-const peopleEl = document.getElementById("people-el")
 const mainBoxEl = document.getElementById("main-box-el")
-
+const contriesEl = document.getElementById("contries-el")
+const peopleEl = document.getElementById("people-el")
 
 console.log(peopleWorkingAbroad)
 
@@ -26,19 +26,26 @@ for(let i = 0; i < maxLength; i++){
 
 let finalArray = ""
 for(let i = 0;i < newArray.length; i++){
+    let height = `${newArray[i] * 2.6}px`
    if (i % 2 === 0){
-    finalArray += `<p class="woman">${newArray[i]}</p>`
+    finalArray += `<p class="woman" style="height:${height}">${newArray[i]}</p>`
    } else{
-    finalArray +=  `<p class="man">${newArray[i]}</p>`
+    finalArray +=  `<p class="man" style="height:${height}">${newArray[i]}</p>`
    }
 }
 console.log(finalArray)
 peopleEl.innerHTML = finalArray
 
 let leftSite = ""
-for (let i = 10; i< 101;i+=10){
+for (let i = 10; i< 101; i+=10){
     leftSite += `<p class="left-number">${i}</p> `
 }
 mainBoxEl.innerHTML = leftSite
 
-// for (let )
+let countries= peopleWorkingAbroad[0].countries
+let countriesHtml = ""
+for (let i = 0; i < peopleWorkingAbroad[0].countries.length; i++){
+countriesHtml += `<p>${countries[i]}</p>`
+}
+
+contriesEl.innerHTML = countriesHtml
